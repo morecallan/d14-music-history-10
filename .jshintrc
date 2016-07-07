@@ -1,0 +1,14 @@
+{
+  "predef": [ "document", "console", "angular", "Firebase", "$http", "$rootScope", "Materialize", "jQuery" ],
+  "esversion": 6,
+  "globalstrict": true,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "unused": false,
+  "globals": {
+    "$": true,
+    "app": true,
+    "jQuery": true
+  }
+}

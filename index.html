@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Music History 10 </title>
+
+  <!-- MATERIALZE: Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <!-- MATERIALZE Icon Font: NECESSARY FOR ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- FONT LIBRARY -->
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <!-- CSS ANIMATIONS -->
+  <link rel="stylesheet" type="text/css" href="styles/animate.css">
+  <!-- CUSTOMIZED STYLING -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+
+
+<body ng-app="MusicHistoryApp">
+<!-- ==============================   THEM DANG VIEWS   ============================== -->
+
+  <!-- BEGINNING OF NAV -->
+  <div id="navContainer" ng-include="'./partials/nav.html'" ng-controller="navCtrl"></div>
+  <!-- END OF NAV BAR -->
+
+
+  <!-- LOADING SPINNER -->
+  <div id="loaderContainer" loader>
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spincner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- END OF LOADING SPINNER-->
+
+
+  <!-- CONTAINER FOR VIEW-->
+  <div id="mainContainer" class="container z-depth-2" ng-view></div>
+  <!-- END OF CONTAINER FOR VIEW-->
+
+<!-- ============================== THEM DANG SCRIPT TAGS ============================== -->
+  <!-- JQUERY: (necessary for Materialize's JavaScript plugins) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+  <!-- ANGULAR: Latest compiled and minified JavaScript -->
+  <script src="lib/node_modules/angular/angular.min.js"></script>
+  <!-- ANGULAR ROUTE: Latest compiled and minified JavaScript -->
+  <script src="lib/node_modules/angular-route/angular-route.min.js"></script>
+  <!-- Materialize: Latest compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
+
+<!-- ============================ THEM DANG ANGULAR CONTROLS ============================== -->
+  <!-- APP -->
+  <script type="text/javascript" src="app/app.js"></script>
+  <!-- FACTORIES -->
+  <script type="text/javascript" src="app/factories/authFactory.factory.js"></script>
+  <!-- DIRECTIVES -->
+  <!-- <script type="text/javascript" src="app/directives/songView.dir.js"></script> -->
+  <!-- CONTROLLERS LAST -->
+  <script type="text/javascript" src="app/controllers/songView.ctrl.js"></script>
+</body>
+</html>
